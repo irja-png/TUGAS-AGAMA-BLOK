@@ -1,0 +1,1343 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perkembangan Islam di Asia Barat | Blog Sejarah</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #0f4c2c;
+            --primary-light: #1a6b47;
+            --secondary: #2d5f3f;
+            --accent: #c9a955;
+            --accent-light: #e8d399;
+            --text-dark: #1a1a1a;
+            --text-medium: #4a4a4a;
+            --text-light: #6b6b6b;
+            --bg-cream: #fdfbf7;
+            --bg-light: #f5f3ef;
+            --bg-card: #ffffff;
+            --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.05);
+            --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.08);
+            --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.12);
+            --shadow-xl: 0 16px 48px rgba(0, 0, 0, 0.15);
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            line-height: 1.75;
+            color: var(--text-dark);
+            background: var(--bg-cream);
+            overflow-x: hidden;
+        }
+
+        /* Decorative Elements */
+        .pattern-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            opacity: 0.03;
+            background-image:
+                radial-gradient(circle at 20% 50%, var(--primary) 1px, transparent 1px),
+                radial-gradient(circle at 80% 80%, var(--accent) 1px, transparent 1px);
+            background-size: 50px 50px;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        /* Smooth Scroll */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Header & Navigation */
+        header {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+            color: white;
+            padding: 0;
+            box-shadow: var(--shadow-lg);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            backdrop-filter: blur(10px);
+        }
+
+        .header-top {
+            background: rgba(0, 0, 0, 0.2);
+            padding: 0.5rem 0;
+            font-size: 0.85rem;
+        }
+
+        .header-top .container-fluid {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header-info {
+            display: flex;
+            gap: 2rem;
+            opacity: 0.9;
+        }
+
+        .header-info span {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        nav {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 1.25rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.75rem;
+            font-weight: 700;
+            font-family: 'Playfair Display', serif;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            color: white;
+            letter-spacing: -0.5px;
+        }
+
+        .logo::before {
+            content: "☪";
+            font-size: 2.5rem;
+            color: var(--accent);
+            filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 3rem;
+            list-style: none;
+            align-items: center;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            transition: all 0.3s;
+            font-weight: 500;
+            font-size: 0.95rem;
+            position: relative;
+            padding: 0.5rem 0;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--accent);
+            transition: width 0.3s;
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .nav-links a:hover {
+            color: var(--accent);
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            background: linear-gradient(135deg, rgba(15, 76, 44, 0.95) 0%, rgba(26, 107, 71, 0.9) 100%),
+                url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="%23c9a955" fill-opacity="0.1" d="M0,128L48,138.7C96,149,192,171,288,165.3C384,160,480,128,576,128C672,128,768,160,864,165.3C960,171,1056,149,1152,128C1248,107,1344,85,1392,74.7L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 8rem 2rem 10rem;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -10%;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(201, 169, 85, 0.15) 0%, transparent 70%);
+            border-radius: 50%;
+            animation: float 20s infinite ease-in-out;
+        }
+
+        .hero::after {
+            content: '';
+            position: absolute;
+            bottom: -30%;
+            left: -10%;
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(201, 169, 85, 0.1) 0%, transparent 70%);
+            border-radius: 50%;
+            animation: float 25s infinite ease-in-out reverse;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .hero-badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
+            padding: 0.5rem 1.5rem;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            margin-bottom: 2rem;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            animation: fadeInDown 0.8s ease;
+        }
+
+        .hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 4rem;
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+            font-weight: 700;
+            letter-spacing: -1px;
+            animation: fadeInUp 0.8s ease 0.2s backwards;
+            text-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            max-width: 700px;
+            margin: 0 auto 2.5rem;
+            opacity: 0.95;
+            line-height: 1.8;
+            animation: fadeInUp 0.8s ease 0.4s backwards;
+        }
+
+        .hero-cta {
+            display: inline-flex;
+            gap: 1rem;
+            animation: fadeInUp 0.8s ease 0.6s backwards;
+        }
+
+        .btn-primary,
+        .btn-secondary {
+            padding: 0.875rem 2rem;
+            border-radius: 50px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s;
+            font-size: 0.95rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .btn-primary {
+            background: var(--accent);
+            color: var(--primary);
+            box-shadow: 0 4px 16px rgba(201, 169, 85, 0.3);
+        }
+
+        .btn-primary:hover {
+            background: var(--accent-light);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(201, 169, 85, 0.4);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: white;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .btn-secondary:hover {
+            background: rgba(255, 255, 255, 0.1);
+            border-color: rgba(255, 255, 255, 0.6);
+        }
+
+        /* Wave Divider */
+        .wave-divider {
+            position: relative;
+            margin-top: -1px;
+        }
+
+        .wave-divider svg {
+            display: block;
+            width: 100%;
+            height: 80px;
+        }
+
+        /* Main Content */
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .breadcrumb {
+            background: white;
+            padding: 1rem 1.5rem;
+            border-radius: 50px;
+            color: var(--text-light);
+            margin-bottom: 3rem;
+            font-size: 0.9rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .breadcrumb a {
+            color: var(--primary);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .breadcrumb a:hover {
+            color: var(--accent);
+        }
+
+        .breadcrumb span {
+            color: var(--text-light);
+        }
+
+        .content-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 380px;
+            gap: 4rem;
+            align-items: start;
+        }
+
+        /* Article Styles */
+        article {
+            background: var(--bg-card);
+            padding: 4rem;
+            border-radius: 24px;
+            box-shadow: var(--shadow-md);
+            position: relative;
+            overflow: hidden;
+        }
+
+        article::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 6px;
+            background: linear-gradient(90deg, var(--primary), var(--accent));
+        }
+
+        .article-header {
+            margin-bottom: 3rem;
+            padding-bottom: 2rem;
+            border-bottom: 2px solid var(--bg-light);
+        }
+
+        .article-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            color: var(--text-light);
+            font-size: 0.9rem;
+            margin-bottom: 2rem;
+        }
+
+        .article-meta span {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: var(--bg-light);
+            padding: 0.5rem 1rem;
+            border-radius: 50px;
+        }
+
+        .reading-time {
+            margin-left: auto;
+            background: var(--primary) !important;
+            color: white !important;
+        }
+
+        h2 {
+            font-family: 'Playfair Display', serif;
+            color: var(--primary);
+            font-size: 2.5rem;
+            margin: 3.5rem 0 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 3px solid var(--accent);
+            display: inline-block;
+            position: relative;
+            line-height: 1.3;
+        }
+
+        h2::after {
+            content: '';
+            position: absolute;
+            bottom: -3px;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background: var(--primary);
+        }
+
+        h3 {
+            font-family: 'Playfair Display', serif;
+            color: var(--secondary);
+            font-size: 1.75rem;
+            margin: 2.5rem 0 1.25rem;
+            font-weight: 600;
+        }
+
+        h4 {
+            color: var(--secondary);
+            font-size: 1.3rem;
+            margin: 2rem 0 1rem;
+            font-weight: 600;
+        }
+
+        p {
+            margin-bottom: 1.5rem;
+            text-align: justify;
+            color: var(--text-medium);
+            font-size: 1.05rem;
+            line-height: 1.9;
+        }
+
+        /* Highlight Box */
+        .highlight-box {
+            background: linear-gradient(135deg, #f0f9f4 0%, #e6f4ed 100%);
+            border-left: 5px solid var(--primary);
+            padding: 2rem;
+            margin: 3rem 0;
+            border-radius: 16px;
+            position: relative;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .highlight-box::before {
+            content: '💡';
+            position: absolute;
+            top: -15px;
+            left: 30px;
+            font-size: 2rem;
+            background: white;
+            padding: 0.5rem;
+            border-radius: 50%;
+            box-shadow: var(--shadow-md);
+        }
+
+        .highlight-box strong {
+            color: var(--primary);
+            font-size: 1.1rem;
+        }
+
+        /* Timeline */
+        .timeline {
+            position: relative;
+            padding-left: 4rem;
+            margin: 3rem 0;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 20px;
+            top: 0;
+            bottom: 0;
+            width: 4px;
+            background: linear-gradient(to bottom, var(--primary), var(--accent), var(--primary));
+            border-radius: 2px;
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 3rem;
+            padding: 2rem;
+            background: linear-gradient(135deg, #ffffff 0%, #fafafa 100%);
+            border-radius: 16px;
+            box-shadow: var(--shadow-md);
+            transition: all 0.3s;
+            border: 1px solid rgba(15, 76, 44, 0.05);
+        }
+
+        .timeline-item:hover {
+            transform: translateX(10px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -3.25rem;
+            top: 2rem;
+            width: 20px;
+            height: 20px;
+            background: var(--accent);
+            border: 4px solid white;
+            border-radius: 50%;
+            box-shadow: 0 0 0 4px var(--primary), var(--shadow-md);
+            z-index: 2;
+        }
+
+        .timeline-year {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--primary), var(--primary-light));
+            color: white;
+            padding: 0.5rem 1.5rem;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 0.95rem;
+            margin-bottom: 1rem;
+            letter-spacing: 0.5px;
+            box-shadow: var(--shadow-sm);
+        }
+
+        /* Card Grid */
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2.5rem;
+            margin: 3rem 0;
+        }
+
+        .card {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 20px;
+            box-shadow: var(--shadow-md);
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            border: 1px solid rgba(15, 76, 44, 0.05);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background: linear-gradient(90deg, var(--primary), var(--accent));
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.4s;
+        }
+
+        .card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-xl);
+        }
+
+        .card h4 {
+            color: var(--primary);
+            margin-top: 0;
+            font-size: 1.4rem;
+            margin-bottom: 1rem;
+        }
+
+        ul,
+        ol {
+            margin: 1.5rem 0 1.5rem 2rem;
+            color: var(--text-medium);
+        }
+
+        li {
+            margin-bottom: 1rem;
+            line-height: 1.8;
+            padding-left: 0.5rem;
+        }
+
+        li::marker {
+            color: var(--accent);
+            font-weight: 600;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            position: sticky;
+            top: 120px;
+        }
+
+        .sidebar-box {
+            background: white;
+            padding: 2rem;
+            border-radius: 20px;
+            box-shadow: var(--shadow-md);
+            margin-bottom: 2rem;
+            border: 1px solid rgba(15, 76, 44, 0.05);
+            transition: all 0.3s;
+        }
+
+        .sidebar-box:hover {
+            box-shadow: var(--shadow-lg);
+        }
+
+        .sidebar-box h3 {
+            margin-top: 0;
+            font-size: 1.25rem;
+            font-family: 'Playfair Display', serif;
+            color: var(--primary);
+            margin-bottom: 1.5rem;
+            padding-bottom: 1rem;
+            border-bottom: 2px solid var(--bg-light);
+        }
+
+        .toc-list {
+            list-style: none;
+            margin: 0;
+        }
+
+        .toc-list li {
+            margin: 0;
+            padding: 0;
+        }
+
+        .toc-list a {
+            color: var(--text-medium);
+            text-decoration: none;
+            display: block;
+            padding: 0.875rem 1rem;
+            border-left: 3px solid transparent;
+            margin-bottom: 0.5rem;
+            transition: all 0.3s;
+            border-radius: 0 8px 8px 0;
+            font-size: 0.95rem;
+        }
+
+        .toc-list a:hover {
+            color: var(--primary);
+            background: var(--bg-light);
+            border-left-color: var(--accent);
+            padding-left: 1.5rem;
+        }
+
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+        }
+
+        .tag {
+            background: var(--bg-light);
+            color: var(--primary);
+            padding: 0.5rem 1.25rem;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            transition: all 0.3s;
+            border: 1px solid transparent;
+        }
+
+        .tag:hover {
+            background: var(--primary);
+            color: white;
+            border-color: var(--primary);
+            transform: translateY(-2px);
+        }
+
+        .related-list {
+            list-style: none;
+            margin: 0;
+        }
+
+        .related-list li {
+            padding: 1rem 0;
+            border-bottom: 1px solid var(--bg-light);
+            margin: 0;
+        }
+
+        .related-list li:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+
+        .related-list a {
+            color: var(--text-medium);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            transition: all 0.3s;
+            font-weight: 500;
+        }
+
+        .related-list a:hover {
+            color: var(--primary);
+            padding-left: 0.5rem;
+        }
+
+        .related-list a::before {
+            content: '→';
+            color: var(--accent);
+            font-weight: bold;
+            transition: transform 0.3s;
+        }
+
+        .related-list a:hover::before {
+            transform: translateX(5px);
+        }
+
+        /* Footer */
+        footer {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+            color: white;
+            padding: 4rem 2rem 2rem;
+            margin-top: 6rem;
+            position: relative;
+        }
+
+        footer::before {
+            content: '';
+            position: absolute;
+            top: -50px;
+            left: 0;
+            right: 0;
+            height: 50px;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 50"><path fill="%230f4c2c" d="M0,25L48,28.3C96,32,192,37,288,35C384,33,480,23,576,21.7C672,20,768,27,864,30C960,33,1056,33,1152,30C1248,27,1344,20,1392,16.7L1440,13L1440,50L1392,50C1344,50,1248,50,1152,50C1056,50,960,50,864,50C768,50,672,50,576,50C480,50,384,50,288,50C192,50,96,50,48,50L0,50Z"></path></svg>');
+            background-size: cover;
+        }
+
+        .footer-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .footer-logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .footer-tagline {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            margin-bottom: 2rem;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin: 2rem 0;
+            flex-wrap: wrap;
+        }
+
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+            opacity: 0.9;
+            transition: all 0.3s;
+            font-weight: 500;
+        }
+
+        .footer-links a:hover {
+            opacity: 1;
+            color: var(--accent);
+        }
+
+        .copyright {
+            margin-top: 2rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+            opacity: 0.8;
+            font-size: 0.9rem;
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translate(0, 0) rotate(0deg);
+            }
+
+            33% {
+                transform: translate(30px, -30px) rotate(5deg);
+            }
+
+            66% {
+                transform: translate(-20px, 20px) rotate(-5deg);
+            }
+        }
+
+        /* Scroll to Top Button */
+        .scroll-top {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            width: 50px;
+            height: 50px;
+            background: var(--accent);
+            color: var(--primary);
+            border: none;
+            border-radius: 50%;
+            font-size: 1.5rem;
+            cursor: pointer;
+            box-shadow: var(--shadow-lg);
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s;
+            z-index: 999;
+        }
+
+        .scroll-top.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .scroll-top:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-xl);
+        }
+
+        /* Responsive */
+        @media (max-width: 1200px) {
+            .container {
+                max-width: 100%;
+            }
+        }
+
+        @media (max-width: 968px) {
+            .content-wrapper {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+
+            .sidebar {
+                position: static;
+            }
+
+            .nav-links {
+                gap: 2rem;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero p {
+                font-size: 1.1rem;
+            }
+
+            article {
+                padding: 2.5rem 2rem;
+            }
+
+            .timeline {
+                padding-left: 3rem;
+            }
+
+            .timeline-item::before {
+                left: -2.5rem;
+            }
+
+            h2 {
+                font-size: 2rem;
+            }
+
+            .header-info {
+                display: none;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 2rem 1rem;
+            }
+
+            .nav-links {
+                flex-direction: column;
+                gap: 1rem;
+                align-items: flex-start;
+            }
+
+            .hero {
+                padding: 5rem 1.5rem 7rem;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+
+            .hero-cta {
+                flex-direction: column;
+                width: 100%;
+            }
+
+            .btn-primary,
+            .btn-secondary {
+                width: 100%;
+                justify-content: center;
+            }
+
+            article {
+                padding: 2rem 1.5rem;
+            }
+
+            h2 {
+                font-size: 1.75rem;
+            }
+
+            .card-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .article-meta {
+                flex-direction: column;
+                gap: 0.75rem;
+            }
+
+            .timeline {
+                padding-left: 2.5rem;
+            }
+
+            .timeline-item {
+                padding: 1.5rem;
+            }
+
+            .scroll-top {
+                bottom: 1rem;
+                right: 1rem;
+                width: 45px;
+                height: 45px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="pattern-bg"></div>
+
+    <header>
+        <div class="header-top">
+            <div class="container-fluid">
+                <div class="header-info">
+                    <span>📧 info@blogsejarah.id</span>
+                    <span>📞 +62 812 3456 7890</span>
+                </div>
+                <div>🌐 Bahasa: Indonesia</div>
+            </div>
+        </div>
+        <nav>
+            <div class="logo">Blog Sejarah Islam</div>
+            <ul class="nav-links">
+                <li><a href="#beranda">Beranda</a></li>
+                <li><a href="#artikel">Artikel</a></li>
+                <li><a href="#tentang">Tentang</a></li>
+                <li><a href="#kontak">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-badge">✨ ARTIKEL SEJARAH PILIHAN</div>
+            <h1>Perkembangan Islam di Asia Barat</h1>
+            <p>Menelusuri jejak sejarah perjalanan Islam dari Makkah hingga menyebar ke seluruh dunia, dari masa Nabi
+                Muhammad SAW hingga zaman keemasan peradaban Islam</p>
+            <div class="hero-cta">
+                <a href="#artikel" class="btn-primary">📖 Baca Artikel</a>
+                <a href="#kontak" class="btn-secondary">💬 Hubungi Kami</a>
+            </div>
+        </div>
+    </section>
+
+    <div class="wave-divider">
+        <svg viewBox="0 0 1440 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M0,32L48,37.3C96,43,192,53,288,58.7C384,64,480,64,576,58.7C672,53,768,43,864,42.7C960,43,1056,53,1152,53.3C1248,53,1344,43,1392,37.3L1440,32L1440,80L1392,80C1344,80,1248,80,1152,80C1056,80,960,80,864,80C768,80,672,80,576,80C480,80,384,80,288,80C192,80,96,80,48,80L0,80Z"
+                fill="#fdfbf7" />
+        </svg>
+    </div>
+
+    <div class="container">
+        <div class="breadcrumb">
+            <a href="#">🏠 Beranda</a> <span>/</span> <a href="#">📚 Sejarah</a> <span>/</span> <span>Perkembangan Islam
+                di Asia Barat</span>
+        </div>
+
+        <div class="content-wrapper">
+            <main>
+                <article id="artikel">
+                    <div class="article-header">
+                        <div class="article-meta">
+                            <span>📅 23 Oktober 2025</span>
+                            <span>👤 Admin Sejarah</span>
+                            <span>🏷️ Sejarah Islam</span>
+                            <span class="reading-time">⏱️ 15 menit baca</span>
+                        </div>
+                    </div>
+
+                    <div class="highlight-box">
+                        <p><strong>Ringkasan Eksekutif:</strong> Agama Islam datang dari Nabi Muhammad yang lahir di
+                            kota Makkah pada tahun 570 M. Islam berkembang pesat di Asia Barat melalui perjuangan Nabi
+                            Muhammad, dilanjutkan oleh Khulafaur Rasyidin, dan mencapai puncak kejayaannya pada masa
+                            Dinasti Umayyah dan Abbasiyyah.</p>
+                    </div>
+
+                    <h2>Kelahiran Nabi Muhammad SAW</h2>
+                    <p>Nabi Muhammad lahir di kota Makkah, Arab Saudi pada tahun 570 M. Beliau berasal dari suku
+                        Quraisy, suku yang memiliki kedudukan terhormat karena sudah turun-temurun diserahi tugas
+                        mengawasi dan memelihara Ka'bah, pusat pemujaan bangsa Arab pada zaman dahulu yang sekarang
+                        menjadi tempat peribadatan umat Islam di seluruh dunia.</p>
+
+                    <p>Ketika Muhammad dilahirkan, ayahnya yang bernama Abdullah telah meninggal dunia. Ibunya, Aminah,
+                        tidak lama mengasuh anaknya karena enam tahun kemudian beliau juga meninggal dunia. Muhammad
+                        kemudian diasuh oleh kakeknya Abdul al-Muttalib. Dua tahun kemudian kakeknya meninggal dan
+                        Muhammad diasuh oleh pamannya yang bernama Abu Talib.</p>
+
+                    <h3>Masa Muda Muhammad</h3>
+                    <p>Hidup Nabi Muhammad tidak berbeda dari anak-anak lain pada masa itu. Pekerjaan sehari-harinya
+                        adalah menggembala ternak. Ketika berumur 12 tahun, Muhammad mengikuti pamannya pergi berdagang
+                        ke Suriah. Dalam usia 25 tahun, Muhammad berkenalan dengan seorang janda kaya bernama Khadijah
+                        yang menerima Muhammad untuk menjalankan dagangnya dengan kafilah. Hubungan ini segera disusul
+                        dengan perkawinan, meskipun usia mereka jauh berbeda. Khadijah berusia 40 tahun atau 25 tahun
+                        lebih tua dari Muhammad.</p>
+
+                    <h3>Turunnya Wahyu Pertama</h3>
+                    <p>Pada suatu malam tanggal 17 bulan Ramadhan tahun 610 M, sewaktu Muhammad sedang menyendiri di Gua
+                        Hira, datang Malaikat Jibril kepadanya dengan membawa wahyu pertama yaitu Surat Al-Alaq. Dengan
+                        turunnya ayat ini, Muhammad menjadi Rasul Allah.</p>
+
+                    <p>Menurut ajaran yang dibawa Nabi Muhammad, pada setiap golongan umat di satu masa, Tuhan telah
+                        mengirimkan utusannya yang terpilih dari golongan itu sendiri guna menyampaikan firman-Nya yang
+                        memberi bimbingan kepada jalan Tuhan. Demikianlah telah datang Nabi Musa AS kepada umat Yahudi,
+                        Nabi Isa AS kepada umat Kristen. Kini datanglah Nabi Muhammad SAW, bukan kepada umat Arab saja,
+                        melainkan sebagai Rasul penutup dan untuk seluruh umat manusia.</p>
+
+                    <h2>Khulafaur Rasyidin (Khalifah yang Mendapat Petunjuk)</h2>
+                    <p>Setelah wafatnya Nabi Muhammad SAW, kepemimpinan umat Islam dilanjutkan oleh para sahabat
+                        terpilih yang dikenal sebagai Khulafaur Rasyidin. Mereka adalah empat khalifah yang memimpin
+                        dengan kebijaksanaan dan meneruskan perjuangan menyebarkan Islam.</p>
+
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-year">632-634 M</div>
+                            <h4>Abu Bakar Ash Shiddiq</h4>
+                            <p>Dalam pemerintahan Abu Bakar yang hanya berlangsung dua tahun, Islam sangat diperkuat
+                                kedudukannya. Abu Bakar berusaha mengumpulkan semua wahyu Tuhan yang selama Nabi
+                                Muhammad SAW hidup hanya berupa hafalan dan tulisan ayat-ayat yang tersebar.</p>
+                            <p><strong>Pencapaian utama:</strong></p>
+                            <ul>
+                                <li>Pengumpulan wahyu ditugaskan kepada Zaid bin Tsabit</li>
+                                <li>Riddat atau menaklukkan orang yang murtad</li>
+                                <li>Pemberantasan nabi-nabi palsu</li>
+                                <li>Perluasan daerah sampai ke Mesopotamia dan Persia</li>
+                            </ul>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-year">634-644 M</div>
+                            <h4>Umar Bin Khattab</h4>
+                            <p>Pemerintahan Umar menambah perkembangan baru dalam kedudukan agama Islam dengan berbagai
+                                tindakan penting.</p>
+                            <p><strong>Pencapaian utama:</strong></p>
+                            <ul>
+                                <li>Mengadakan tarikh atau tahun Islam (kalender Hijriah)</li>
+                                <li>Perluasan daerah ke Suriah, Palestina, Armenia, Daerah Laut Kaspia, Mesir dan
+                                    sebagian besar pantai Utara Afrika</li>
+                            </ul>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-year">644-656 M</div>
+                            <h4>Utsman Bin Affan</h4>
+                            <p>Utsman terpilih oleh dewan khalifah karena ia adalah salah seorang dari orang-orang
+                                pertama yang masuk Islam.</p>
+                            <p><strong>Pencapaian utama:</strong></p>
+                            <ul>
+                                <li>Membukukan Al-Qur'an dengan bantuan Zaid bin Tsabit</li>
+                                <li>Perluasan daerah dari Persia ke utara dan timur sampai ke batas India</li>
+                                <li>Perluasan dari Mesir ke barat untuk merebut berbagai daerah di sekitar Laut Tengah
+                                </li>
+                            </ul>
+                            <p><em>Catatan: Masa akhir pemerintahan ditandai dengan pemberontakan dari Mesir yang tidak
+                                    puas terhadap pemerintahannya.</em></p>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-year">656-661 M</div>
+                            <h4>Ali Bin Abi Thalib</h4>
+                            <p>Ali diangkat sebagai khalifah setelah terbunuhnya Utsman. Pada masa pemerintahannya, ibu
+                                kota dipindah ke Kufah.</p>
+                            <p><strong>Peristiwa penting:</strong></p>
+                            <ul>
+                                <li>Mendapat perlawanan dari berbagai pihak termasuk Aisyah dan kaum Umayyah</li>
+                                <li>Pertempuran di Siffin (657 M) selama tujuh hari melawan Muawiyyah</li>
+                            </ul>
+                            <p><strong>Akibat perang:</strong></p>
+                            <ul>
+                                <li>Munculnya dua khalifah: Ali bin Abi Thalib dan Muawiyyah</li>
+                                <li>Timbulnya golongan Kharijiyah</li>
+                                <li>Ali terbunuh dalam peperangan</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <h2>Masa Kejayaan Islam</h2>
+
+                    <div class="card-grid">
+                        <div class="card">
+                            <h4>🏛️ Dinasti Umayyah (661-750 M)</h4>
+                            <p>Dengan meninggalnya Ali, kekuasaan berada sepenuhnya di tangan Muawiyyah, dan mulailah
+                                pemerintahan Umayyah. Muawiyyah terkenal sebagai pemimpin yang cakap, dari keadaan yang
+                                kacau terbentuklah masyarakat Islam yang teratur dan tentram.</p>
+                            <p><strong>Pencapaian:</strong></p>
+                            <ul>
+                                <li>Kedudukan Khalifah menjadi turun-temurun</li>
+                                <li>Perluasan daerah: di timur sampai Afghanistan dan Punjab, di utara sampai Turkestan
+                                    dan Asia Kecil, di barat sampai Spanyol</li>
+                                <li>Terkumpulnya kitab-kitab Hadits</li>
+                                <li>Lahirnya kebudayaan Islam yang tinggi</li>
+                            </ul>
+                        </div>
+
+                        <div class="card">
+                            <h4>⭐ Dinasti Abbasiyyah (750-1258 M)</h4>
+                            <p>Pemerintahan Abbasiyyah berpusat di Baghdad dan merupakan zaman emas dalam sejarah Islam.
+                                Islam berkembang menjadi kebudayaan dunia. Seni, ilmu, dan filsafat dari Iran, India,
+                                dan Yunani diselidiki, diterjemahkan, dan diolah sebagai hasil peradaban Islam.</p>
+                        </div>
+                    </div>
+
+                    <h3>Empat Masa Kekuasaan Abbasiyyah</h3>
+
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-year">750-861 M: Masa Kejayaan</div>
+                            <p>Para khalifah adalah tokoh-tokoh yang kuat dan cakap. Yang paling terkenal adalah
+                                Khalifah Harun Al-Rasyid (dihubungkan dengan cerita Alif Laila wa Laila/1001 Malam) dan
+                                anaknya, Khalifah Al-Ma'mun.</p>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-year">861-945 M: Masa Kemunduran</div>
+                            <p>Khalifah-khalifah menjadi lemah dan kurang cakap. Mereka tenggelam dalam kemewahan dan
+                                memerlukan bantuan orang-orang Turki. Kekuasaan sepenuhnya jatuh pada tangan
+                                kepala-kepala barisan pengawal yang menamakan diri Amir Al-Umara (amir dari para amir).
+                            </p>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-year">945-1055 M: Masa Suku Buyia</div>
+                            <p>Timbulnya suku Buyia yang berasal dari Persia sebagai kepala pemerintahan. Khalifah hanya
+                                dalam nama saja yang masih memerintah.</p>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-year">1055-1258 M: Masa Bangsa Seljuk</div>
+                            <p>Timbulnya bangsa Seljuk (campuran Turki dan Mongol) sebagai pemegang kekuasaan dengan
+                                gelar Sultan. Masa ini mengalami kejayaan dalam ilmu dan tasawuf. Wasir Nizam al-Mulk
+                                mendirikan perguruan tinggi di Baghdad yang menjadi pusat ilmu pengetahuan. Salah satu
+                                guru besarnya adalah Imam Al-Ghazali, penegak tasawuf dalam Islam yang masyhur di timur
+                                dan barat sampai sekarang.</p>
+                        </div>
+                    </div>
+
+                    <div class="highlight-box">
+                        <h4>💡 Warisan Kebudayaan Islam</h4>
+                        <p>Dalam masa ini timbullah kebudayaan Islam yang sebenarnya. Para khalifah beserta pegawai dan
+                            keluarganya tetap terdiri dari orang-orang Arab dengan bahasa Arab, tetapi kebudayaannya
+                            tidak lagi murni kebudayaan Arab. Islam bersikap sangat lapang dalam menghadapi berbagai
+                            kebudayaan (Syria, Mesopotamia, Persia, Mesir), sehingga dapat menerima sebanyak-banyaknya
+                            unsur kebudayaan lain. Dengan demikian timbullah kebudayaan Islam yang tinggi sekali
+                            tingkatnya dan kemudian berkembang menjadi kebudayaan dunia.</p>
+                    </div>
+
+                    <h2>Kesimpulan</h2>
+                    <p>Perkembangan Islam di Asia Barat dimulai dari kota Makkah, Arab Saudi, yang dibawa oleh Nabi
+                        Muhammad SAW. Setelah wafatnya Nabi, penyebaran Islam dilanjutkan oleh Khulafaur Rasyidin yang
+                        berhasil memperluas wilayah kekuasaan Islam. Kejayaan Islam mencapai puncaknya pada masa Dinasti
+                        Umayyah dan Dinasti Abbasiyyah, di mana Islam tidak hanya berkembang sebagai agama, tetapi juga
+                        sebagai peradaban yang memberikan kontribusi besar terhadap ilmu pengetahuan, seni, dan filsafat
+                        dunia.</p>
+                </article>
+            </main>
+
+            <aside class="sidebar">
+                <div class="sidebar-box">
+                    <h3>📑 Daftar Isi</h3>
+                    <ul class="toc-list">
+                        <li><a href="#artikel">Kelahiran Nabi Muhammad</a></li>
+                        <li><a href="#artikel">Khulafaur Rasyidin</a></li>
+                        <li><a href="#artikel">Masa Kejayaan Islam</a></li>
+                        <li><a href="#artikel">Dinasti Umayyah</a></li>
+                        <li><a href="#artikel">Dinasti Abbasiyyah</a></li>
+                        <li><a href="#artikel">Kesimpulan</a></li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-box">
+                    <h3>🏷️ Tag Artikel</h3>
+                    <div class="tags">
+                        <span class="tag">Sejarah Islam</span>
+                        <span class="tag">Asia Barat</span>
+                        <span class="tag">Khulafaur Rasyidin</span>
+                        <span class="tag">Peradaban Islam</span>
+                        <span class="tag">Dinasti Umayyah</span>
+                        <span class="tag">Dinasti Abbasiyyah</span>
+                    </div>
+                </div>
+
+                <div class="sidebar-box">
+                    <h3>📚 Artikel Terkait</h3>
+                    <ul class="related-list">
+                        <li><a href="#">Penyebaran Islam ke Indonesia</a></li>
+                        <li><a href="#">Kebudayaan Islam di Dunia</a></li>
+                        <li><a href="#">Masa Keemasan Baghdad</a></li>
+                        <li><a href="#">Peran Ilmuwan Muslim dalam Sains</a></li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-box"
+                    style="background: linear-gradient(135deg, var(--primary), var(--primary-light)); color: white; border: none;">
+                    <h3 style="color: white; border-color: rgba(255,255,255,0.3);">💌 Newsletter</h3>
+                    <p style="margin-bottom: 1rem; font-size: 0.9rem;">Dapatkan artikel sejarah terbaru langsung ke
+                        email Anda!</p>
+                    <input type="email" placeholder="Email Anda"
+                        style="width: 100%; padding: 0.75rem; border: none; border-radius: 8px; margin-bottom: 0.75rem; font-size: 0.9rem;">
+                    <button
+                        style="width: 100%; padding: 0.75rem; background: var(--accent); color: var(--primary); border: none; border-radius: 8px; font-weight: 600; cursor: pointer; transition: all 0.3s;">Berlangganan</button>
+                </div>
+            </aside>
+        </div>
+    </div>
+
+    <footer id="kontak">
+        <div class="footer-content">
+            <div class="footer-logo">☪ Blog Sejarah Islam</div>
+            <p class="footer-tagline">Menelusuri jejak peradaban Islam di dunia</p>
+
+            <div class="footer-links">
+                <a href="#tentang">Tentang Kami</a>
+                <a href="#artikel">Artikel</a>
+                <a href="#kontak">Kontak</a>
+                <a href="#privasi">Kebijakan Privasi</a>
+                <a href="#syarat">Syarat & Ketentuan</a>
+            </div>
+
+            <div class="copyright">
+                <p>&copy; 2025 Blog Sejarah Islam. Semua hak dilindungi undang-undang.</p>
+                <p>Dibuat dengan ❤️ untuk pembelajaran sejarah Islam</p>
+            </div>
+        </div>
+    </footer>
+
+    <button class="scroll-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">↑</button>
+
+    <script>
+        // Scroll to top button visibility
+        window.addEventListener('scroll', function () {
+            const scrollTop = document.querySelector('.scroll-top');
+            if (window.pageYOffset > 300) {
+                scrollTop.classList.add('visible');
+            } else {
+                scrollTop.classList.remove('visible');
+            }
+        });
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add scroll animation to timeline items
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver(function (entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.timeline-item, .card').forEach(item => {
+            item.style.opacity = '0';
+            item.style.transform = 'translateY(30px)';
+            item.style.transition = 'all 0.6s ease';
+            observer.observe(item);
+        });
+    </script>
+</body>
+
+</html>

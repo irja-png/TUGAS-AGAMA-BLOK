@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Perkembangan Islam di Asia Barat | Blog Sejarah</title>
     <link
-        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@300;400;500;600;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Lora:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
     <style>
         * {
@@ -18,14 +18,17 @@
         :root {
             --primary: #0f4c2c;
             --primary-light: #1a6b47;
+            --primary-dark: #0a3820;
             --secondary: #2d5f3f;
-            --accent: #c9a955;
+            --accent: #d4a574;
             --accent-light: #e8d399;
+            --accent-dark: #b8935f;
             --text-dark: #1a1a1a;
-            --text-medium: #4a4a4a;
-            --text-light: #6b6b6b;
+            --text-medium: #3a3a3a;
+            --text-light: #5a5a5a;
+            --text-lighter: #888888;
             --bg-cream: #fdfbf7;
-            --bg-light: #f5f3ef;
+            --bg-light: #f7f5f1;
             --bg-card: #ffffff;
             --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.05);
             --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.08);
@@ -34,21 +37,20 @@
         }
 
         body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-            line-height: 1.75;
+            font-family: 'Lora', 'Georgia', serif;
+            line-height: 1.8;
             color: var(--text-dark);
             background: var(--bg-cream);
             overflow-x: hidden;
         }
 
-        /* Decorative Elements */
         .pattern-bg {
             position: fixed;
             top: 0;
             left: 0;
             right: 0;
             bottom: 0;
-            opacity: 0.03;
+            opacity: 0.025;
             background-image:
                 radial-gradient(circle at 20% 50%, var(--primary) 1px, transparent 1px),
                 radial-gradient(circle at 80% 80%, var(--accent) 1px, transparent 1px);
@@ -57,7 +59,6 @@
             z-index: 0;
         }
 
-        /* Smooth Scroll */
         html {
             scroll-behavior: smooth;
         }
@@ -77,7 +78,7 @@
         }
 
         main {
-            margin-top: 120px;
+            margin-top: 90px;
         }
 
         .mobile-menu-btn {
@@ -90,33 +91,6 @@
             padding: 0.5rem;
         }
 
-        .header-top {
-            background: rgba(0, 0, 0, 0.2);
-            padding: 0.5rem 0;
-            font-size: 0.85rem;
-        }
-
-        .header-top .container-fluid {
-            max-width: 1400px;
-            margin: 0 auto;
-            padding: 0 2rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .header-info {
-            display: flex;
-            gap: 2rem;
-            opacity: 0.9;
-        }
-
-        .header-info span {
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
-
         nav {
             max-width: 1400px;
             margin: 0 auto;
@@ -127,7 +101,7 @@
         }
 
         .logo {
-            font-size: 1.75rem;
+            font-size: 1.6rem;
             font-weight: 700;
             font-family: 'Playfair Display', serif;
             display: flex;
@@ -139,14 +113,14 @@
 
         .logo::before {
             content: "☪";
-            font-size: 2.5rem;
+            font-size: 2.2rem;
             color: var(--accent);
             filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
         }
 
         .nav-links {
             display: flex;
-            gap: 3rem;
+            gap: 2.5rem;
             list-style: none;
             align-items: center;
         }
@@ -159,6 +133,7 @@
             font-size: 0.95rem;
             position: relative;
             padding: 0.5rem 0;
+            font-family: 'Inter', sans-serif;
         }
 
         .nav-links a::after {
@@ -188,7 +163,7 @@
             background-size: cover;
             background-position: center;
             color: white;
-            padding: 8rem 2rem 10rem;
+            padding: 7rem 2rem 9rem;
             text-align: center;
             overflow: hidden;
         }
@@ -200,7 +175,7 @@
             right: -10%;
             width: 600px;
             height: 600px;
-            background: radial-gradient(circle, rgba(201, 169, 85, 0.15) 0%, transparent 70%);
+            background: radial-gradient(circle, rgba(212, 165, 116, 0.15) 0%, transparent 70%);
             border-radius: 50%;
             animation: float 20s infinite ease-in-out;
         }
@@ -212,7 +187,7 @@
             left: -10%;
             width: 500px;
             height: 500px;
-            background: radial-gradient(circle, rgba(201, 169, 85, 0.1) 0%, transparent 70%);
+            background: radial-gradient(circle, rgba(212, 165, 116, 0.1) 0%, transparent 70%);
             border-radius: 50%;
             animation: float 25s infinite ease-in-out reverse;
         }
@@ -230,32 +205,35 @@
             backdrop-filter: blur(10px);
             padding: 0.5rem 1.5rem;
             border-radius: 50px;
-            font-size: 0.85rem;
+            font-size: 0.8rem;
             font-weight: 600;
-            letter-spacing: 0.5px;
-            margin-bottom: 2rem;
+            letter-spacing: 1px;
+            margin-bottom: 1.5rem;
             border: 1px solid rgba(255, 255, 255, 0.2);
             animation: fadeInDown 0.8s ease;
+            font-family: 'Inter', sans-serif;
+            text-transform: uppercase;
         }
 
         .hero h1 {
             font-family: 'Playfair Display', serif;
-            font-size: 4rem;
+            font-size: 3.5rem;
             margin-bottom: 1.5rem;
             line-height: 1.2;
-            font-weight: 700;
+            font-weight: 800;
             letter-spacing: -1px;
             animation: fadeInUp 0.8s ease 0.2s backwards;
-            text-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            text-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
         }
 
         .hero p {
-            font-size: 1.25rem;
+            font-size: 1.15rem;
             max-width: 700px;
             margin: 0 auto 2.5rem;
             opacity: 0.95;
-            line-height: 1.8;
+            line-height: 1.7;
             animation: fadeInUp 0.8s ease 0.4s backwards;
+            font-family: 'Lora', serif;
         }
 
         .hero-cta {
@@ -275,18 +253,19 @@
             display: inline-flex;
             align-items: center;
             gap: 0.5rem;
+            font-family: 'Inter', sans-serif;
         }
 
         .btn-primary {
             background: var(--accent);
-            color: var(--primary);
-            box-shadow: 0 4px 16px rgba(201, 169, 85, 0.3);
+            color: var(--primary-dark);
+            box-shadow: 0 4px 16px rgba(212, 165, 116, 0.3);
         }
 
         .btn-primary:hover {
             background: var(--accent-light);
             transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(201, 169, 85, 0.4);
+            box-shadow: 0 6px 20px rgba(212, 165, 116, 0.4);
         }
 
         .btn-secondary {
@@ -332,20 +311,22 @@
             align-items: center;
             gap: 0.5rem;
             box-shadow: var(--shadow-sm);
+            font-family: 'Inter', sans-serif;
         }
 
         .breadcrumb a {
             color: var(--primary);
             text-decoration: none;
             transition: color 0.3s;
+            font-weight: 500;
         }
 
         .breadcrumb a:hover {
-            color: var(--accent);
+            color: var(--accent-dark);
         }
 
         .breadcrumb span {
-            color: var(--text-light);
+            color: var(--text-lighter);
         }
 
         .content-wrapper {
@@ -384,10 +365,11 @@
         .article-meta {
             display: flex;
             flex-wrap: wrap;
-            gap: 2rem;
-            color: var(--text-light);
+            gap: 1.5rem;
+            color: var(--text-lighter);
             font-size: 0.9rem;
             margin-bottom: 2rem;
+            font-family: 'Inter', sans-serif;
         }
 
         .article-meta span {
@@ -395,8 +377,9 @@
             align-items: center;
             gap: 0.5rem;
             background: var(--bg-light);
-            padding: 0.5rem 1rem;
+            padding: 0.6rem 1.2rem;
             border-radius: 50px;
+            font-weight: 500;
         }
 
         .reading-time {
@@ -405,16 +388,78 @@
             color: white !important;
         }
 
+        /* Social Share */
+        .social-share {
+            display: flex;
+            gap: 1rem;
+            margin: 2rem 0;
+            padding: 1.5rem;
+            background: var(--bg-light);
+            border-radius: 16px;
+            align-items: center;
+        }
+
+        .social-share span {
+            font-weight: 600;
+            color: var(--text-medium);
+            font-family: 'Inter', sans-serif;
+            font-size: 0.95rem;
+        }
+
+        .social-share-buttons {
+            display: flex;
+            gap: 0.75rem;
+        }
+
+        .social-btn {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            color: white;
+            transition: all 0.3s;
+            font-size: 1.1rem;
+        }
+
+        .social-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .social-btn.facebook {
+            background: #1877f2;
+        }
+
+        .social-btn.twitter {
+            background: #1da1f2;
+        }
+
+        .social-btn.whatsapp {
+            background: #25d366;
+        }
+
+        .social-btn.linkedin {
+            background: #0077b5;
+        }
+
+        .social-btn.copy {
+            background: var(--text-medium);
+        }
+
         h2 {
             font-family: 'Playfair Display', serif;
             color: var(--primary);
-            font-size: 2.5rem;
-            margin: 3.5rem 0 2rem;
-            padding-bottom: 1rem;
+            font-size: 2.2rem;
+            margin: 3.5rem 0 1.5rem;
+            padding-bottom: 0.8rem;
             border-bottom: 3px solid var(--accent);
             display: inline-block;
             position: relative;
             line-height: 1.3;
+            font-weight: 700;
         }
 
         h2::after {
@@ -430,16 +475,17 @@
         h3 {
             font-family: 'Playfair Display', serif;
             color: var(--secondary);
-            font-size: 1.75rem;
+            font-size: 1.65rem;
             margin: 2.5rem 0 1.25rem;
             font-weight: 600;
         }
 
         h4 {
             color: var(--secondary);
-            font-size: 1.3rem;
+            font-size: 1.25rem;
             margin: 2rem 0 1rem;
             font-weight: 600;
+            font-family: 'Lora', serif;
         }
 
         p {
@@ -447,7 +493,19 @@
             text-align: justify;
             color: var(--text-medium);
             font-size: 1.05rem;
-            line-height: 1.9;
+            line-height: 1.85;
+        }
+
+        /* Progress Bar */
+        .reading-progress {
+            position: fixed;
+            top: 90px;
+            left: 0;
+            width: 0%;
+            height: 4px;
+            background: linear-gradient(90deg, var(--accent), var(--primary));
+            z-index: 999;
+            transition: width 0.1s;
         }
 
         /* Highlight Box */
@@ -476,6 +534,10 @@
         .highlight-box strong {
             color: var(--primary);
             font-size: 1.1rem;
+        }
+
+        .highlight-box p {
+            color: var(--text-medium);
         }
 
         /* Timeline */
@@ -533,10 +595,11 @@
             padding: 0.5rem 1.5rem;
             border-radius: 50px;
             font-weight: 700;
-            font-size: 0.95rem;
+            font-size: 0.9rem;
             margin-bottom: 1rem;
             letter-spacing: 0.5px;
             box-shadow: var(--shadow-sm);
+            font-family: 'Inter', sans-serif;
         }
 
         /* Card Grid */
@@ -583,7 +646,7 @@
         .card h4 {
             color: var(--primary);
             margin-top: 0;
-            font-size: 1.4rem;
+            font-size: 1.3rem;
             margin-bottom: 1rem;
         }
 
@@ -600,14 +663,14 @@
         }
 
         li::marker {
-            color: var(--accent);
+            color: var(--accent-dark);
             font-weight: 600;
         }
 
         /* Sidebar */
         .sidebar {
             position: sticky;
-            top: 120px;
+            top: 110px;
         }
 
         .sidebar-box {
@@ -626,7 +689,7 @@
 
         .sidebar-box h3 {
             margin-top: 0;
-            font-size: 1.25rem;
+            font-size: 1.2rem;
             font-family: 'Playfair Display', serif;
             color: var(--primary);
             margin-bottom: 1.5rem;
@@ -654,13 +717,36 @@
             transition: all 0.3s;
             border-radius: 0 8px 8px 0;
             font-size: 0.95rem;
+            font-family: 'Inter', sans-serif;
         }
 
-        .toc-list a:hover {
+        .toc-list a:hover,
+        .toc-list a.active {
             color: var(--primary);
             background: var(--bg-light);
             border-left-color: var(--accent);
             padding-left: 1.5rem;
+        }
+
+        /* Search Box */
+        .search-box {
+            position: relative;
+        }
+
+        .search-box input {
+            width: 100%;
+            padding: 0.875rem 1rem;
+            border: 2px solid var(--bg-light);
+            border-radius: 12px;
+            font-size: 0.95rem;
+            transition: all 0.3s;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .search-box input:focus {
+            outline: none;
+            border-color: var(--accent);
+            box-shadow: 0 0 0 3px rgba(212, 165, 116, 0.1);
         }
 
         .tags {
@@ -678,6 +764,7 @@
             font-weight: 500;
             transition: all 0.3s;
             border: 1px solid transparent;
+            font-family: 'Inter', sans-serif;
         }
 
         .tag:hover {
@@ -685,6 +772,7 @@
             color: white;
             border-color: var(--primary);
             transform: translateY(-2px);
+            cursor: pointer;
         }
 
         .related-list {
@@ -711,6 +799,7 @@
             gap: 0.75rem;
             transition: all 0.3s;
             font-weight: 500;
+            font-family: 'Inter', sans-serif;
         }
 
         .related-list a:hover {
@@ -720,13 +809,37 @@
 
         .related-list a::before {
             content: '→';
-            color: var(--accent);
+            color: var(--accent-dark);
             font-weight: bold;
             transition: transform 0.3s;
         }
 
         .related-list a:hover::before {
             transform: translateX(5px);
+        }
+
+        /* Print Button */
+        .print-btn {
+            background: var(--bg-light);
+            color: var(--primary);
+            border: 2px solid var(--primary);
+            padding: 0.75rem 1.5rem;
+            border-radius: 12px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            width: 100%;
+            justify-content: center;
+            font-family: 'Inter', sans-serif;
+            font-size: 0.95rem;
+        }
+
+        .print-btn:hover {
+            background: var(--primary);
+            color: white;
         }
 
         /* Footer */
@@ -782,6 +895,7 @@
             opacity: 0.9;
             transition: all 0.3s;
             font-weight: 500;
+            font-family: 'Inter', sans-serif;
         }
 
         .footer-links a:hover {
@@ -846,7 +960,7 @@
             width: 50px;
             height: 50px;
             background: var(--accent);
-            color: var(--primary);
+            color: var(--primary-dark);
             border: none;
             border-radius: 50%;
             font-size: 1.5rem;
@@ -856,6 +970,7 @@
             visibility: hidden;
             transition: all 0.3s;
             z-index: 999;
+            font-weight: bold;
         }
 
         .scroll-top.visible {
@@ -866,6 +981,63 @@
         .scroll-top:hover {
             transform: translateY(-5px);
             box-shadow: var(--shadow-xl);
+            background: var(--accent-light);
+        }
+
+        /* Dark Mode Toggle */
+        .theme-toggle {
+            position: fixed;
+            bottom: 5rem;
+            right: 2rem;
+            width: 50px;
+            height: 50px;
+            background: var(--primary);
+            color: white;
+            border: none;
+            border-radius: 50%;
+            font-size: 1.3rem;
+            cursor: pointer;
+            box-shadow: var(--shadow-lg);
+            transition: all 0.3s;
+            z-index: 999;
+        }
+
+        .theme-toggle:hover {
+            transform: scale(1.1);
+            background: var(--primary-light);
+        }
+
+        /* Print Styles */
+        @media print {
+
+            header,
+            .sidebar,
+            .scroll-top,
+            .theme-toggle,
+            .social-share,
+            .hero-cta,
+            .breadcrumb,
+            footer {
+                display: none !important;
+            }
+
+            body {
+                background: white;
+            }
+
+            article {
+                box-shadow: none;
+                padding: 0;
+            }
+
+            .container {
+                max-width: 100%;
+                padding: 0;
+            }
+
+            .content-wrapper {
+                grid-template-columns: 1fr;
+            }
         }
 
         /* Responsive */
@@ -910,25 +1082,18 @@
 
             .mobile-menu-btn {
                 display: block;
-                background: none;
-                border: none;
-                color: white;
-                font-size: 1.5rem;
-                cursor: pointer;
-                padding: 0.5rem;
             }
 
             .hero {
-                padding-top: 4rem;
+                padding: 5rem 2rem 7rem;
             }
 
             .hero h1 {
                 font-size: 2.5rem;
-                line-height: 1.3;
             }
 
             .hero p {
-                font-size: 1.1rem;
+                font-size: 1.05rem;
             }
 
             article {
@@ -944,40 +1109,50 @@
             }
 
             h2 {
-                font-size: 2rem;
+                font-size: 1.9rem;
             }
 
-            .header-info {
-                display: none;
+            .social-share {
+                flex-direction: column;
+                align-items: flex-start;
             }
         }
 
         @media (max-width: 600px) {
             .container {
-                padding: 1rem;
+                padding: 2rem 1rem;
             }
 
             .logo {
-                font-size: 1.4rem;
+                font-size: 1.3rem;
+            }
+
+            .logo::before {
+                font-size: 1.8rem;
             }
 
             nav {
                 padding: 0.75rem 1rem;
             }
 
+            main {
+                margin-top: 75px;
+            }
+
+            .reading-progress {
+                top: 75px;
+            }
+
             .hero {
                 padding: 4rem 1.5rem 6rem;
-                margin-top: 60px;
             }
 
             .hero h1 {
-                font-size: 1.75rem;
-                line-height: 1.4;
+                font-size: 2rem;
             }
 
             .hero p {
                 font-size: 1rem;
-                line-height: 1.6;
             }
 
             .hero-cta {
@@ -1003,19 +1178,21 @@
             }
 
             h2 {
-                font-size: 1.5rem;
+                font-size: 1.6rem;
                 margin: 2.5rem 0 1.5rem;
             }
 
             h3 {
-                font-size: 1.35rem;
-                margin: 2rem 0 1rem;
+                font-size: 1.4rem;
+            }
+
+            h4 {
+                font-size: 1.15rem;
             }
 
             p {
                 font-size: 1rem;
-                line-height: 1.7;
-                margin-bottom: 1.25rem;
+                line-height: 1.75;
             }
 
             .card-grid {
@@ -1028,39 +1205,35 @@
             }
 
             .article-meta {
-                flex-direction: column;
                 gap: 0.75rem;
             }
 
             .timeline {
                 padding-left: 2.5rem;
-                margin: 2rem 0;
             }
 
             .timeline-item {
                 padding: 1.25rem;
-                margin-bottom: 2rem;
             }
 
             .highlight-box {
                 padding: 1.5rem;
-                margin: 2rem 0;
             }
 
-            .scroll-top {
+            .scroll-top,
+            .theme-toggle {
                 bottom: 1rem;
                 right: 1rem;
-                width: 40px;
-                height: 40px;
-                font-size: 1.25rem;
+                width: 45px;
+                height: 45px;
             }
 
-            .footer-content {
-                padding: 0 1rem;
+            .theme-toggle {
+                bottom: 4rem;
             }
 
-            .footer-links {
-                gap: 1rem;
+            .social-share-buttons {
+                flex-wrap: wrap;
             }
         }
     </style>
@@ -1068,20 +1241,12 @@
 
 <body>
     <div class="pattern-bg"></div>
+    <div class="reading-progress" id="readingProgress"></div>
 
     <header>
-        <div class="header-top">
-            <div class="container-fluid">
-                <div class="header-info">
-                    <span>📧 info@blogsejarah.id</span>
-                    <span>📞 +62 812 3456 7890</span>
-                </div>
-                <div>🌐 Bahasa: Indonesia</div>
-            </div>
-        </div>
         <nav>
             <div class="logo">Blog Sejarah Islam</div>
-            <button class="mobile-menu-btn">☰</button>
+            <button class="mobile-menu-btn" aria-label="Toggle menu">☰</button>
             <ul class="nav-links">
                 <li><a href="#beranda">Beranda</a></li>
                 <li><a href="#artikel">Artikel</a></li>
@@ -1090,48 +1255,6 @@
             </ul>
         </nav>
     </header>
-
-    <script>
-        // Mobile menu functionality
-        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
-        const navLinks = document.querySelector('.nav-links');
-
-        mobileMenuBtn.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-        });
-
-        // Close menu when clicking outside
-        document.addEventListener('click', (e) => {
-            if (!e.target.closest('nav')) {
-                navLinks.classList.remove('active');
-            }
-        });
-
-        // Close menu when clicking on a link
-        navLinks.querySelectorAll('a').forEach(link => {
-            link.addEventListener('click', () => {
-                navLinks.classList.remove('active');
-            });
-        });
-
-        // Scroll to top button functionality
-        const scrollTopBtn = document.querySelector('.scroll-top');
-
-        window.addEventListener('scroll', () => {
-            if (window.pageYOffset > 300) {
-                scrollTopBtn.classList.add('visible');
-            } else {
-                scrollTopBtn.classList.remove('visible');
-            }
-        });
-
-        scrollTopBtn.addEventListener('click', () => {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
-        });
-    </script>
 
     <section class="hero">
         <div class="hero-content">
@@ -1172,6 +1295,22 @@
                         </div>
                     </div>
 
+                    <div class="social-share">
+                        <span>Bagikan:</span>
+                        <div class="social-share-buttons">
+                            <a href="#" class="social-btn facebook" title="Bagikan ke Facebook"
+                                onclick="shareArticle('facebook'); return false;">f</a>
+                            <a href="#" class="social-btn twitter" title="Bagikan ke Twitter"
+                                onclick="shareArticle('twitter'); return false;">𝕏</a>
+                            <a href="#" class="social-btn whatsapp" title="Bagikan ke WhatsApp"
+                                onclick="shareArticle('whatsapp'); return false;">W</a>
+                            <a href="#" class="social-btn linkedin" title="Bagikan ke LinkedIn"
+                                onclick="shareArticle('linkedin'); return false;">in</a>
+                            <a href="#" class="social-btn copy" title="Salin Link"
+                                onclick="copyLink(); return false;">🔗</a>
+                        </div>
+                    </div>
+
                     <div class="highlight-box">
                         <p><strong>Ringkasan Eksekutif:</strong> Agama Islam datang dari Nabi Muhammad yang lahir di
                             kota Makkah pada tahun 570 M. Islam berkembang pesat di Asia Barat melalui perjuangan Nabi
@@ -1179,7 +1318,7 @@
                             Dinasti Umayyah dan Abbasiyyah.</p>
                     </div>
 
-                    <h2>Kelahiran Nabi Muhammad SAW</h2>
+                    <h2 id="kelahiran">Kelahiran Nabi Muhammad SAW</h2>
                     <p>Nabi Muhammad lahir di kota Makkah, Arab Saudi pada tahun 570 M. Beliau berasal dari suku
                         Quraisy, suku yang memiliki kedudukan terhormat karena sudah turun-temurun diserahi tugas
                         mengawasi dan memelihara Ka'bah, pusat pemujaan bangsa Arab pada zaman dahulu yang sekarang
@@ -1209,7 +1348,7 @@
                         Nabi Isa AS kepada umat Kristen. Kini datanglah Nabi Muhammad SAW, bukan kepada umat Arab saja,
                         melainkan sebagai Rasul penutup dan untuk seluruh umat manusia.</p>
 
-                    <h2>Khulafaur Rasyidin (Khalifah yang Mendapat Petunjuk)</h2>
+                    <h2 id="khulafaur">Khulafaur Rasyidin (Khalifah yang Mendapat Petunjuk)</h2>
                     <p>Setelah wafatnya Nabi Muhammad SAW, kepemimpinan umat Islam dilanjutkan oleh para sahabat
                         terpilih yang dikenal sebagai Khulafaur Rasyidin. Mereka adalah empat khalifah yang memimpin
                         dengan kebijaksanaan dan meneruskan perjuangan menyebarkan Islam.</p>
@@ -1278,7 +1417,7 @@
                         </div>
                     </div>
 
-                    <h2>Masa Kejayaan Islam</h2>
+                    <h2 id="kejayaan">Masa Kejayaan Islam</h2>
 
                     <div class="card-grid">
                         <div class="card">
@@ -1348,7 +1487,7 @@
                             tingkatnya dan kemudian berkembang menjadi kebudayaan dunia.</p>
                     </div>
 
-                    <h2>Kesimpulan</h2>
+                    <h2 id="kesimpulan">Kesimpulan</h2>
                     <p>Perkembangan Islam di Asia Barat dimulai dari kota Makkah, Arab Saudi, yang dibawa oleh Nabi
                         Muhammad SAW. Setelah wafatnya Nabi, penyebaran Islam dilanjutkan oleh Khulafaur Rasyidin yang
                         berhasil memperluas wilayah kekuasaan Islam. Kejayaan Islam mencapai puncaknya pada masa Dinasti
@@ -1360,15 +1499,27 @@
 
             <aside class="sidebar">
                 <div class="sidebar-box">
+                    <h3>🔍 Cari Artikel</h3>
+                    <div class="search-box">
+                        <input type="text" placeholder="Cari topik sejarah..." aria-label="Search">
+                    </div>
+                </div>
+
+                <div class="sidebar-box">
                     <h3>📑 Daftar Isi</h3>
                     <ul class="toc-list">
-                        <li><a href="#artikel">Kelahiran Nabi Muhammad</a></li>
-                        <li><a href="#artikel">Khulafaur Rasyidin</a></li>
-                        <li><a href="#artikel">Masa Kejayaan Islam</a></li>
-                        <li><a href="#artikel">Dinasti Umayyah</a></li>
-                        <li><a href="#artikel">Dinasti Abbasiyyah</a></li>
-                        <li><a href="#artikel">Kesimpulan</a></li>
+                        <li><a href="#kelahiran">Kelahiran Nabi Muhammad</a></li>
+                        <li><a href="#khulafaur">Khulafaur Rasyidin</a></li>
+                        <li><a href="#kejayaan">Masa Kejayaan Islam</a></li>
+                        <li><a href="#kesimpulan">Kesimpulan</a></li>
                     </ul>
+                </div>
+
+                <div class="sidebar-box">
+                    <h3>🖨️ Cetak Artikel</h3>
+                    <button class="print-btn" onclick="window.print()">
+                        🖨️ Cetak atau Simpan PDF
+                    </button>
                 </div>
 
                 <div class="sidebar-box">
@@ -1396,12 +1547,16 @@
                 <div class="sidebar-box"
                     style="background: linear-gradient(135deg, var(--primary), var(--primary-light)); color: white; border: none;">
                     <h3 style="color: white; border-color: rgba(255,255,255,0.3);">💌 Newsletter</h3>
-                    <p style="margin-bottom: 1rem; font-size: 0.9rem;">Dapatkan artikel sejarah terbaru langsung ke
+                    <p
+                        style="margin-bottom: 1rem; font-size: 0.9rem; font-family: 'Inter', sans-serif; color: rgba(255,255,255,0.95);">
+                        Dapatkan artikel sejarah terbaru langsung ke
                         email Anda!</p>
                     <input type="email" placeholder="Email Anda"
-                        style="width: 100%; padding: 0.75rem; border: none; border-radius: 8px; margin-bottom: 0.75rem; font-size: 0.9rem;">
+                        style="width: 100%; padding: 0.75rem; border: none; border-radius: 8px; margin-bottom: 0.75rem; font-size: 0.9rem; font-family: 'Inter', sans-serif;">
                     <button
-                        style="width: 100%; padding: 0.75rem; background: var(--accent); color: var(--primary); border: none; border-radius: 8px; font-weight: 600; cursor: pointer; transition: all 0.3s;">Berlangganan</button>
+                        style="width: 100%; padding: 0.75rem; background: var(--accent); color: var(--primary-dark); border: none; border-radius: 8px; font-weight: 600; cursor: pointer; transition: all 0.3s; font-family: 'Inter', sans-serif;"
+                        onmouseover="this.style.background='var(--accent-light)'"
+                        onmouseout="this.style.background='var(--accent)'">Berlangganan</button>
                 </div>
             </aside>
         </div>
@@ -1427,16 +1582,46 @@
         </div>
     </footer>
 
-    <button class="scroll-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">↑</button>
+    <button class="scroll-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})"
+        aria-label="Scroll to top">↑</button>
+    <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode">🌙</button>
 
     <script>
-        // Scroll to top button visibility
-        window.addEventListener('scroll', function () {
-            const scrollTop = document.querySelector('.scroll-top');
-            if (window.pageYOffset > 300) {
-                scrollTop.classList.add('visible');
+        // Mobile menu
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        const navLinks = document.querySelector('.nav-links');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('nav')) {
+                navLinks.classList.remove('active');
+            }
+        });
+
+        navLinks.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+            });
+        });
+
+        // Reading progress bar
+        window.addEventListener('scroll', () => {
+            const article = document.querySelector('article');
+            const scrollTop = window.pageYOffset;
+            const docHeight = article.offsetHeight;
+            const winHeight = window.innerHeight;
+            const scrollPercent = scrollTop / (docHeight - winHeight) * 100;
+            document.getElementById('readingProgress').style.width = Math.min(scrollPercent, 100) + '%';
+
+            // Scroll to top button
+            const scrollTopBtn = document.querySelector('.scroll-top');
+            if (scrollTop > 300) {
+                scrollTopBtn.classList.add('visible');
             } else {
-                scrollTop.classList.remove('visible');
+                scrollTopBtn.classList.remove('visible');
             }
         });
 
@@ -1454,7 +1639,29 @@
             });
         });
 
-        // Add scroll animation to timeline items
+        // Active TOC highlighting
+        const sections = document.querySelectorAll('h2[id], h3[id]');
+        const tocLinks = document.querySelectorAll('.toc-list a');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (pageYOffset >= (sectionTop - 200)) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            tocLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === '#' + current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+
+        // Intersection Observer for animations
         const observerOptions = {
             threshold: 0.1,
             rootMargin: '0px 0px -100px 0px'
@@ -1474,6 +1681,203 @@
             item.style.transform = 'translateY(30px)';
             item.style.transition = 'all 0.6s ease';
             observer.observe(item);
+        });
+
+        // Share functions
+        function shareArticle(platform) {
+            const url = encodeURIComponent(window.location.href);
+            const title = encodeURIComponent(document.title);
+            let shareUrl = '';
+
+            switch (platform) {
+                case 'facebook':
+                    shareUrl = `https://www.facebook.com/sharer/sharer.php?u=${url}`;
+                    break;
+                case 'twitter':
+                    shareUrl = `https://twitter.com/intent/tweet?url=${url}&text=${title}`;
+                    break;
+                case 'whatsapp':
+                    shareUrl = `https://wa.me/?text=${title}%20${url}`;
+                    break;
+                case 'linkedin':
+                    shareUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${url}`;
+                    break;
+            }
+
+            if (shareUrl) {
+                window.open(shareUrl, '_blank', 'width=600,height=400');
+            }
+        }
+
+        function copyLink() {
+            const url = window.location.href;
+            navigator.clipboard.writeText(url).then(() => {
+                const copyBtn = document.querySelector('.social-btn.copy');
+                const originalContent = copyBtn.innerHTML;
+                copyBtn.innerHTML = '✓';
+                copyBtn.style.background = '#4caf50';
+                setTimeout(() => {
+                    copyBtn.innerHTML = originalContent;
+                    copyBtn.style.background = 'var(--text-medium)';
+                }, 2000);
+            }).catch(err => {
+                alert('Link berhasil disalin: ' + url);
+            });
+        }
+
+        // Dark mode toggle
+        function toggleTheme() {
+            const body = document.body;
+            const themeToggle = document.querySelector('.theme-toggle');
+
+            body.style.transition = 'all 0.3s ease';
+
+            if (body.style.filter === 'invert(1) hue-rotate(180deg)') {
+                body.style.filter = '';
+                themeToggle.innerHTML = '🌙';
+                localStorage.setItem('theme', 'light');
+            } else {
+                body.style.filter = 'invert(1) hue-rotate(180deg)';
+                themeToggle.innerHTML = '☀️';
+                localStorage.setItem('theme', 'dark');
+            }
+
+            // Prevent images from being inverted
+            document.querySelectorAll('img').forEach(img => {
+                if (body.style.filter) {
+                    img.style.filter = 'invert(1) hue-rotate(180deg)';
+                } else {
+                    img.style.filter = '';
+                }
+            });
+        }
+
+        // Load saved theme
+        window.addEventListener('DOMContentLoaded', () => {
+            const savedTheme = localStorage.getItem('theme');
+            if (savedTheme === 'dark') {
+                document.body.style.filter = 'invert(1) hue-rotate(180deg)';
+                document.querySelector('.theme-toggle').innerHTML = '☀️';
+                document.querySelectorAll('img').forEach(img => {
+                    img.style.filter = 'invert(1) hue-rotate(180deg)';
+                });
+            }
+        });
+
+        // Search functionality
+        const searchInput = document.querySelector('.search-box input');
+        if (searchInput) {
+            searchInput.addEventListener('input', (e) => {
+                const searchTerm = e.target.value.toLowerCase();
+                // This is a placeholder - in a real implementation, you would search through articles
+                console.log('Searching for:', searchTerm);
+            });
+        }
+
+        // Tag click functionality
+        document.querySelectorAll('.tag').forEach(tag => {
+            tag.addEventListener('click', () => {
+                const tagName = tag.textContent;
+                console.log('Filtering by tag:', tagName);
+                // In a real implementation, this would filter articles by tag
+            });
+        });
+
+        // Newsletter subscription
+        const newsletterBtn = document.querySelector('.sidebar-box button');
+        const newsletterInput = document.querySelector('.sidebar-box input[type="email"]');
+
+        if (newsletterBtn && newsletterInput) {
+            newsletterBtn.addEventListener('click', () => {
+                const email = newsletterInput.value;
+                if (email && email.includes('@')) {
+                    alert('Terima kasih! Anda telah berlangganan newsletter kami.');
+                    newsletterInput.value = '';
+                } else {
+                    alert('Mohon masukkan alamat email yang valid.');
+                }
+            });
+        }
+
+        // Keyboard shortcuts
+        document.addEventListener('keydown', (e) => {
+            // Press 'T' to scroll to top
+            if (e.key === 't' || e.key === 'T') {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
+            // Press 'D' to toggle dark mode
+            if (e.key === 'd' || e.key === 'D') {
+                toggleTheme();
+            }
+            // Press 'P' to print
+            if (e.key === 'p' || e.key === 'P') {
+                e.preventDefault();
+                window.print();
+            }
+        });
+
+        // Add tooltips for keyboard shortcuts
+        const scrollTopBtn = document.querySelector('.scroll-top');
+        const themeToggleBtn = document.querySelector('.theme-toggle');
+
+        scrollTopBtn.title = 'Kembali ke atas (tekan T)';
+        themeToggleBtn.title = 'Toggle mode gelap (tekan D)';
+
+        // Font size adjustment (accessibility)
+        let fontSize = 100;
+        document.addEventListener('keydown', (e) => {
+            if (e.ctrlKey || e.metaKey) {
+                if (e.key === '+' || e.key === '=') {
+                    e.preventDefault();
+                    fontSize = Math.min(fontSize + 10, 150);
+                    document.querySelector('article').style.fontSize = fontSize + '%';
+                } else if (e.key === '-') {
+                    e.preventDefault();
+                    fontSize = Math.max(fontSize - 10, 80);
+                    document.querySelector('article').style.fontSize = fontSize + '%';
+                } else if (e.key === '0') {
+                    e.preventDefault();
+                    fontSize = 100;
+                    document.querySelector('article').style.fontSize = '100%';
+                }
+            }
+        });
+
+        // Lazy loading images (if any are added)
+        if ('IntersectionObserver' in window) {
+            const imageObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const img = entry.target;
+                        img.src = img.dataset.src;
+                        img.classList.remove('lazy');
+                        imageObserver.unobserve(img);
+                    }
+                });
+            });
+
+            document.querySelectorAll('img.lazy').forEach(img => {
+                imageObserver.observe(img);
+            });
+        }
+
+        // Prevent text selection during fast scrolling
+        let isScrolling;
+        window.addEventListener('scroll', () => {
+            window.clearTimeout(isScrolling);
+            document.body.style.userSelect = 'none';
+            isScrolling = setTimeout(() => {
+                document.body.style.userSelect = 'auto';
+            }, 100);
+        }, false);
+
+        // Performance monitoring
+        window.addEventListener('load', () => {
+            if ('performance' in window) {
+                const perfData = window.performance.timing;
+                const pageLoadTime = perfData.loadEventEnd - perfData.navigationStart;
+                console.log('Page load time:', pageLoadTime + 'ms');
+            }
         });
     </script>
 </body>
